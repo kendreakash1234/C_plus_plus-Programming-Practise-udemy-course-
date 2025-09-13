@@ -36,7 +36,7 @@ int main()
     if(num!=v1.end())
         cout<<*num<<" is present in vector"<<endl;
     else
-        cout<<"numbre is not present in vector"<<endl;
+        cout<<"number is not present in vector"<<endl;
 
     int num1 = count(v1.begin(), v1.end(),9);
     cout<<9<<" is "<<num1<<" times present in vector"<<endl;

@@ -45,6 +45,7 @@ int main()
     cout<<"2nd element "<<(*vector_ptr).at(1)<<endl;
     cout<<"3rd element "<<(*vector_ptr).at(2)<<endl;
     cout<<"4th element "<<(*vector_ptr).at(3)<<endl;
+	
     return 0;
 }
 

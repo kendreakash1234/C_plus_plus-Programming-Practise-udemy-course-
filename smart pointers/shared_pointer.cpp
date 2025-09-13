@@ -40,18 +40,15 @@ int main()
 
     
     shared_ptr<Test> p1 = make_shared<Test>();
-    cout<<"Count "<<r.use_count()<<endl;
-    cout<<"Count "<<r.use_count()<<endl;
-    cout<<"Count "<<r.use_count()<<endl;
+    cout<<"Count "<<p1.use_count()<<endl;
     shared_ptr<Test> q1{make_shared<Test>()};
-    cout<<"Count "<<r.use_count()<<endl;
-    cout<<"Count "<<r.use_count()<<endl;
+    cout<<"Count "<<q1.use_count()<<endl;
     shared_ptr<Test> r1{p1};
-    cout<<"Count "<<r.use_count()<<endl;
+    cout<<"Count "<<r1.use_count()<<endl;
     shared_ptr<Test> s1 = r1;
     shared_ptr<Test> t1;
     t1 = q1;
-    cout<<"Count "<<r.use_count()<<endl;
+    cout<<"Count "<<t1.use_count()<<endl;
     
     return 0;
 }
