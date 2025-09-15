@@ -1,0 +1,12 @@
+#ifndef DEC23MYLIB_GLOBAL_H
+#define DEC23MYLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DEC23MYLIB_LIBRARY)
+#  define DEC23MYLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DEC23MYLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DEC23MYLIB_GLOBAL_H
