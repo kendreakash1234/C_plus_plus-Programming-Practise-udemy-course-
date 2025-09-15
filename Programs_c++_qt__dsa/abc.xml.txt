@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Math>
+   <Equation>
+      <eq1>
+         <value1>5</value1>
+         <value2>3</value2>
+      </eq1>
+      <eq2>
+         <value1>5</value1>
+         <value2>3</value2>
+      </eq2>
+   </Equation>
+   <Variables>
+      <var1>
+        <val1>
+           <number1>1.5</number1>
+           <number2>0.2</number2>
+        </val1>
+        <val2>
+           <number1>1.5</number1>
+           <number2>0.2</number2>
+        </val2>
+      </var1>
+      <var2>
+        <val1>
+          <number1>2.5</number1>
+          <number2>1.2</number2>
+        </val1>
+        <val2>
+          <number1>2.5</number1>
+          <number2>1.2</number2>
+        </val2>
+      </var2>
+   </Variables>
+</Math>
