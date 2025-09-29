@@ -7,7 +7,7 @@ class Test{
     int data;
     public:
     Test():data{0}{
-        
+
     }
     Test(int num):data{num}{
         cout<<"Constructor "<<data<<endl;
@@ -16,7 +16,7 @@ class Test{
         return data;
     }
     ~Test(){
-        cout<<"Donstructor "<<data<<endl;
+        cout<<"Destructor "<<data<<endl;
     }
 };
 
@@ -50,6 +50,6 @@ int main()
     cin>>num;
     fill(*vec_ptr, num);
     display(*vec_ptr, num);
-    
+
     return 0;
 }
