@@ -8,7 +8,7 @@ struct square_functor{
         cout<<x*x<<endl;
     }
     void add(int x){
-        cout<<x*x<<endl;
+        cout<<x+x<<endl;
     }
 };
 
@@ -22,13 +22,14 @@ int main()
     square_functor square;
     cout<<"Using functor(function object)"<<endl;
     for_each(v.begin(), v.end(),square);
-    
-    
+    cout<<"Sum = ";
+    square.add(5);
+
     cout<<"Using function pointer"<<endl;
     for_each(v.begin(), v.end(),square_functor1);
-    
+
     cout<<"Using lambda "<<endl;
     for_each(v.begin(), v.end(),[](int x){cout<<x*x<<endl;});
-    
+
     return 0;
 }

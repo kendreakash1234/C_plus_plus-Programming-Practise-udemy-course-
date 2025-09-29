@@ -27,7 +27,7 @@ ostream &operator<<(ostream &os, const Person &obj2){
 template <typename T>
 void myswap(T &a, T &b){
     T temp = a;
-    a = b; 
+    a = b;
     b = temp;
 }
 
@@ -36,18 +36,18 @@ int main()
   cout<<min1(3,4)<<endl;
   cout<<min1<double>(3.1,4.4)<<endl;
   cout<<min1<char>('c','v')<<endl;
-   
+
    func<int,double>(1,2.3);
-   func<int,double>(2.4,'c');
-   func<int,double>('c',3);
-   
+   func<double,char>(2.4,'c');
+   func<char,int>('c',3);
+
    Person p1{"akash", 28};
    Person p2{"kendre", 12};
    Person p3 = min(p1,p2);
    cout<<p3.name<<" is younger"<<endl;
-   
+
    func(p1,p2);
-   
+
     int a{10}, b{20};
     std::cout << "a = "<<a<<" b = "<<b << std::endl;
     swap(a,b);

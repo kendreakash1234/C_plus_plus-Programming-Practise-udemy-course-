@@ -7,20 +7,20 @@ class Person{
     friend bool operator==(const Person &p1,const Person &p2);
     string name;
     int age;
-    
+
     public:
     Person(string a, int s):name{a}, age{s}{
         cout<<name<<" is "<<age<<" years old"<<endl;
     }
-    
+
     string get_name() const{
         return name;
     }
-    
+
     int get_age() const{
         return age;
     }
-    
+
 };
 
 bool operator==(const Person &p1,const Person &p2){
@@ -30,12 +30,11 @@ bool operator==(const Person &p1,const Person &p2){
 int main()
 {
     vector<int> v{1,2,3,4,5};
-    
-    auto loc = std::find(v.begin(), v.end(), 7);
+
+    auto loc = std::find(v.begin(), v.end(), 5);
     if(loc!=v.end())
         cout<<*loc<<endl;
-    cout<<*loc<<endl;
-    
+
     vector<Person> vec;
     Person p{"a",2};
     Person p1{"kendre",8};
@@ -47,7 +46,7 @@ int main()
         cout<<"Person found "<<lock->get_name()<<endl;
     else
         cout<<"Person not found "<<endl;
-    
-    
+
+
     return 0;
 }
