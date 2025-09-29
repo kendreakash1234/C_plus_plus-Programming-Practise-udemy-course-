@@ -2,14 +2,14 @@
 using namespace std;
 
 class Stack{
-    
+
     int size;
     int top;
     int *arr;
     public:
     Stack(int n){
         size = n;
-        arr = new int(size);
+        arr = new int[size];
         top = -1;
     }
     void push(int n){
@@ -17,9 +17,9 @@ class Stack{
             cout<<"Stack overflow, could not insert element "<<n<<endl;
         else{
             arr[++top] = n;
-        }   
+        }
     }
-    
+
     void pop(){
         if(top < 0)
             cout<<"Stack underflow"<<endl;
@@ -27,11 +27,14 @@ class Stack{
             top--;
         }
     }
-    
+
     void display(){
         cout<<"Stack elements"<<endl;
         for(int i=top;i>=0;i--)
             cout<<arr[i]<<endl;
+    }
+    ~Stack(){
+    delete [] arr;
     }
 };
 
@@ -39,14 +42,21 @@ int main()
 {
     Stack s(6);
     s.push(3);
+    s.display();
     s.push(5);
+    s.display();
     s.push(6);
     s.push(8);
+    s.display();
     s.push(9);
     s.push(4);
     s.push(1);
-    // s.pop();
+    s.push(1);
     s.display();
-    
+     s.pop();
+     s.pop();
+     s.pop();
+    s.display();
+
     return 0;
 }
